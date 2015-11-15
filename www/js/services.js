@@ -1,6 +1,6 @@
 angular.module('starter.services', ['ngResource'])
 
-.factory('musicService', function(/*$http*/$resource) {
+.factory('Music', function(/*$http*/$resource) {
 	/*return {
 		getMusics: function(){
 			return $http.get('http://chillup.herokuapp.com/musics.json''http://jsonplaceholder.typicode.com/users''https://randomuser.me/api/?results=10').then(function(response){
@@ -8,9 +8,11 @@ angular.module('starter.services', ['ngResource'])
 			});
 		}
 	}*/
-	return $resource('http://jsonplaceholder.typicode.com/users');
-		
-	
+	// return $resource('http://jsonplaceholder.typicode.com/users');
+	// return $resource('http://chillup.herokuapp.com/musics');
+	return $resource('http://localhost:3000/musics/:musicId');
+
+
 });
 //links
 //'http://chillup.herokuapp.com/musics.json'

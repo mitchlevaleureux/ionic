@@ -41,21 +41,19 @@ angular.module('starter.controllers', ['starter.services'])
   };
 })
 
-.controller("SessionsCtrl",function($scope, musicService){
-  
+.controller('MusicsCtrl',function($scope, Music){
+
  /* musicService.getMusics().then(function(musics){
     $scope.musics = musics;
   });
 */
-$scope.musics = musicService.query();
-
-
+$scope.musics = Music.query();
 
 })
 
 
-.controller('SessionCtrl', function($scope, $stateParams, musicService) {
-    $scope.music = musicService.get({sessionId: $stateParams.sessionId});
+.controller('MusicCtrl', function($scope, $stateParams, Music) {
+    $scope.music = Music.get({musicId: $stateParams.musicId});
 });
 
 /*.controller('PlaylistsCtrl', function($scope) {

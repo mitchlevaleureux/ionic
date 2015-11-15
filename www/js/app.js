@@ -49,28 +49,28 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-  
-  .state('app.sessions', {
-  url: "/sessions",
+
+  .state('app.musics', {
+  url: "/musics",
   views: {
       'menuContent': {
-          templateUrl: "templates/sessions.html",
-          controller: 'SessionsCtrl'
+          templateUrl: "templates/musics.html",
+          controller: 'MusicsCtrl'
       }
   }
 })
 
-  .state('app.session', {
-    url: "/sessions/:sessionId",
+  .state('app.music', {
+    url: "/musics/:musicId",
     views: {
         'menuContent': {
-          templateUrl: "templates/session.html",
-          controller: 'SessionCtrl'
+          templateUrl: "templates/music.html",
+          controller: 'MusicCtrl'
       }
     }
 });
 
-  $urlRouterProvider.otherwise('/app/sessions');
+  $urlRouterProvider.otherwise('/app/musics');
 
 });
 
