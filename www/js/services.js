@@ -15,8 +15,9 @@ angular.module('starter.services', ['ngResource'])
 	//return $resource('http://chillup.herokuapp.com/musics.json');
 
 
+})
+
+.factory('Wake', function(/*$http*/$resource) {
+	return $resource('http://localhost:3000/musics/:musicId/wake.json')
 });
-//links
-//'http://chillup.herokuapp.com/musics.json'
-//'http://jsonplaceholder.typicode.com/users'
-//'https://randomuser.me/api/?results=10'
+
