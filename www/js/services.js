@@ -8,9 +8,11 @@ angular.module('starter.services', ['ngResource'])
 			});
 		}
 	}*/
-	// return $resource('http://jsonplaceholder.typicode.com/users');
-	// return $resource('http://chillup.herokuapp.com/musics');
-	return $resource('http://localhost:3000/musics/:musicId');
+	//return $resource('http://jsonplaceholder.typicode.com/users');
+	//return $resource('http://chillup.herokuapp.com/musics');
+	//return $resource('http://localhost:3000/musics/:musicId');
+	return $resource('http://localhost:3000/musics/:musicId.json');
+	//return $resource('http://chillup.herokuapp.com/musics.json');
 
 
 });

@@ -14,7 +14,12 @@
   <ion-content>
     <ion-list>
       <ion-item ng-repeat="music in musics"
-                href="#/app/musics/{{music.id}}">{{music.name}}</ion-item>
+                href="#/app/musics/{{music.id}}">
+				<div class="container">
+				<img src="{{music.image}}" height="50%" width="25%"/>
+				</div>
+                <p>{{music.name}} {{music.file}}</p>
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-view>
