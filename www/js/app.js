@@ -31,11 +31,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     templateUrl: 'templates/menu.html',
     controller: 'AppCtrl'
   })
+
   .state('app.users', {
     url: '/users',
-    abstract: true,
     templateUrl: 'templates/users.html',
     controller: 'UsersCtrl'
+  })
+
+.state('app.user', {
+    url: '/users/:userId',
+    templateUrl: 'templates/user.html',
+    controller: 'UserCtrl'
   })
 
   .state('app.search', {

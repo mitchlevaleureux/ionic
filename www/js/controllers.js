@@ -52,6 +52,33 @@ $scope.musics = Music.query();
 
 })
 
+/*
+.controller('UserCtrl', function($scope, $stateParams, User, Wake, $ionicModal, 
+  $timeout, $location, $ionicPopup, $rootScope) {
+    $scope.user = User.get({userId: $stateParams.userId});
+
+    $scope.data={};
+
+    // Create the login modal that we will use later
+  $ionicModal.fromTemplateUrl('templates/wake.html', {
+    scope: $scope
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+
+ };
+
+*/
+.controller('UsersCtrl',function($scope, User){
+
+ /* musicService.getMusics().then(function(musics){
+    $scope.musics = musics;
+  });
+*/
+$scope.users = User.query();
+
+})
+
 
 .controller('MusicCtrl', function($scope, $stateParams, Music, Wake, $ionicModal, 
   $timeout, $location, $ionicPopup, $rootScope) {
