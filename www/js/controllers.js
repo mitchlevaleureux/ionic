@@ -80,7 +80,9 @@ $scope.musics = Music.query();
 
   $scope.doWake = function() {
     //console.log('Doing login', $scope.loginData);
-    var theWake = new Wake({ user: $scope.data });
+    var theWake = new Wake({waker_name : $scope.data.wakername
+          wakee_name : $scope.data.wakeename});
+
     theWake.$save();
     // Simulate a login delay. Remove this and replace with your login
     // code if using a login system
