@@ -34,14 +34,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
   .state('app.users', {
     url: '/users',
-    abstract: true,
     templateUrl: 'templates/users.html',
     controller: 'UsersCtrl'
   })
 
 .state('app.user', {
     url: '/users/:userId',
-    abstract: true,
     templateUrl: 'templates/user.html',
     controller: 'UserCtrl'
   })
