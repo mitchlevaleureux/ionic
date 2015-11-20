@@ -35,13 +35,13 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   .state('app.users', {
     url: '/users',
     templateUrl: 'templates/users.html',
-    //controller: 'UsersCtrl'
+    controller: 'UsersCtrl'
   })
 
 .state('app.user', {
     url: '/users/:userId',
     templateUrl: 'templates/user.html',
-    //controller: 'UserCtrl'
+    controller: 'UserCtrl'
   })
 
   .state('app.search', {

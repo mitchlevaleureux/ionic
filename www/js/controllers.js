@@ -69,16 +69,16 @@ $scope.musics = Music.query();
  };
 
 */
+/*
 .controller('UsersCtrl',function($scope, User){
 
  /* musicService.getMusics().then(function(musics){
     $scope.musics = musics;
-  });
-*/
+  });/*
 $scope.users = User.query();
 
 })
-
+*/
 
 .controller('MusicCtrl', function($scope, $stateParams, Music, Wake, $ionicModal, 
   $timeout, $location, $ionicPopup, $rootScope) {
