@@ -80,10 +80,11 @@ $scope.musics = Music.query();
 
   $scope.doWake = function() {
     //console.log('Doing login', $scope.loginData);
-    var theWake = new Wake({waker_name : $scope.data.wakername
+    var theWake = new Wake({waker_name : $scope.data.wakername,
           wakee_name : $scope.data.wakeename});
 
     theWake.$save();
+
     // Simulate a login delay. Remove this and replace with your login
     // code if using a login system
    /* $timeout(function() {
@@ -120,19 +121,3 @@ $scope.musics = Music.query();
   */
 
 });
-
-/*.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
-})
-
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-});
-*/
