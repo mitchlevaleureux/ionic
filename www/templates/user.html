@@ -1,0 +1,65 @@
+<!-- <ion-view view-title="Description">
+  <ion-content>
+    <div class="list card">
+       <ion-list>
+      <ion-item class="item-avatar" ng-repeat="item in music"> -->
+        <!--<img src="{{item.user.picture.thumbnail}} " />-->
+      <!-- </ion-item>
+    </ion-list>
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item">
+          <i class="icon ion-thumbsup"></i>
+          Like
+        </a>
+        <a class="tab-item">
+          <i class="icon ion-chatbox"></i>
+          Comment
+        </a>
+        <a class="tab-item">
+          <i class="icon ion-share"></i>
+          Share
+        </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view> -->
+
+<ion-view view-title="Music">
+  <ion-content>
+  <ion-content scroll="false" class="padding">
+  <h1>
+  preferences utilisateur
+  </h1>
+  </ion-content>
+    <div class="list card">
+      <div class="item">
+        <h3>{{music.name}}</h3>
+        <p> {{id}}</p>
+        <p>{{music.file}}</p>
+        <p>{{music.author}}</p>
+      </div>
+      <!--<div class="item item-body">
+         <p>{{session.description}}</p> 
+      </div> 
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item">
+          <i class="icon ion-thumbsup"></i>
+          Like
+        </a>
+        <a class="tab-item">
+          <i class="icon ion-chatbox"></i>
+          Comment
+        </a>
+        <a class="tab-item">
+          <i class="icon ion-share"></i>
+          Share
+        </a>
+      </div>-->
+      <div class="padding">
+      <button class="button button-block button-calm" ng-click="new music()">
+        Music
+      </button>
+    </div>
+    </div>
+  </ion-content>
+</ion-view>
