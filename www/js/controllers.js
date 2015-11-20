@@ -89,7 +89,7 @@ $scope.musics = Music.query();
       $scope.closeLogin();
     }, 1000);*/
   };
-//test
+
 
 
 
